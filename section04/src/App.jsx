@@ -1,19 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() { //함수가 HTML 태그들을 리턴하고 있으면 React 컴포넌트라고 불리는 특별한 함수입니다. React 컴포넌트는 UI를 구성하는 기본 단위입니다.
   return (
     <>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
           <h1>Get started</h1>
