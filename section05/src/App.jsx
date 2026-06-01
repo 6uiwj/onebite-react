@@ -21,7 +21,10 @@ function App() {
       <Footer /> {/* footer 컴포넌트 사용 */} 
       <Button {...buttonProps} />
       <Button text={"카페"}/>
-      <Button text={"블로그"}/>
+      <Button text={"블로그"}>
+        <div>자식 요소</div> {/* Button 컴포넌트의 children props로 자동으로 전달 */}
+        <Header /> {/* Button 컴포넌트의 children props로 자동으로 전달 */}
+        </Button>
     </>
   );
 }
